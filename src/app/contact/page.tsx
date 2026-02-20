@@ -117,6 +117,42 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+      {/* Google Maps */}
+      <section className="bg-surface pb-16 md:pb-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <h2 className="font-heading text-2xl md:text-3xl font-bold mb-2">
+              Nous Trouver
+            </h2>
+            <p className="text-text-muted">
+              Atelier Le Gall — Menuisier, Côtes-d&apos;Armor
+            </p>
+          </div>
+          <div className="rounded-2xl overflow-hidden shadow-premium">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2619.7!2d-3.2882653!3d48.711302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x481227a033540931%3A0xc2dba36afe4d99b0!2sAtelier%20Le%20Gall%20menuisier!5e0!3m2!1sfr!2sfr!4v1"
+              width="100%"
+              height="450"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Atelier Le Gall - Google Maps"
+            />
+          </div>
+          <div className="text-center mt-4">
+            <a
+              href="https://www.google.com/maps/place/Atelier+Le+Gall+menuisier/@48.711302,-3.2882653,17z"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-accent hover:text-accent-700 font-medium transition-colors"
+            >
+              <MapPin size={18} />
+              Voir sur Google Maps
+            </a>
+          </div>
+        </div>
+      </section>
     </>
   );
 }

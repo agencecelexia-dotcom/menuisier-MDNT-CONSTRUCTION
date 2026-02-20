@@ -16,9 +16,10 @@ export function JsonLd() {
     },
     geo: {
       "@type": "GeoCoordinates",
-      latitude: 48.5,
-      longitude: -3.0,
+      latitude: 48.711302,
+      longitude: -3.285685,
     },
+    hasMap: "https://www.google.com/maps/place/Atelier+Le+Gall+menuisier/@48.711302,-3.2882653,17z",
     openingHoursSpecification: {
       "@type": "OpeningHoursSpecification",
       dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
@@ -36,8 +37,8 @@ export function JsonLd() {
       "@type": "GeoCircle",
       geoMidpoint: {
         "@type": "GeoCoordinates",
-        latitude: 48.5,
-        longitude: -3.0,
+        latitude: 48.711302,
+        longitude: -3.285685,
       },
       geoRadius: "100000",
     },

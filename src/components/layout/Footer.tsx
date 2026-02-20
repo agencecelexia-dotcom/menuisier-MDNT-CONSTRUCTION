@@ -92,9 +92,14 @@ export function Footer() {
               </li>
               <li className="flex items-start gap-3">
                 <MapPin size={18} className="text-accent-300 mt-0.5 shrink-0" />
-                <span className="text-primary-200 text-sm">
+                <a
+                  href="https://www.google.com/maps/place/Atelier+Le+Gall+menuisier/@48.711302,-3.2882653,17z"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary-200 text-sm hover:text-white transition-colors"
+                >
                   22450, Côtes-d&apos;Armor, Bretagne
-                </span>
+                </a>
               </li>
               <li className="flex items-start gap-3">
                 <Clock size={18} className="text-accent-300 mt-0.5 shrink-0" />
