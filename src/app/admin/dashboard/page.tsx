@@ -80,7 +80,7 @@ const FAKE_STATS = {
       service: "Escalier",
       subject: "Escalier sur mesure pour mezzanine",
       message:
-        "Bonjour Michaël, je fais construire une mezzanine dans mon salon et j'aurais besoin d'un escalier hélicoïdal en bois. Hauteur sous plafond 3m20. J'ai vu vos réalisations sur le site, c'est exactement ce que je recherche. Pouvez-vous passer voir les lieux ?",
+        "Bonjour Mickaël, je fais construire une mezzanine dans mon salon et j'aurais besoin d'un escalier hélicoïdal en bois. Hauteur sous plafond 3m20. J'ai vu vos réalisations sur le site, c'est exactement ce que je recherche. Pouvez-vous passer voir les lieux ?",
       location: "Saint-Brieuc (22000)",
       date: "19/02/2026",
       time: "09:15",

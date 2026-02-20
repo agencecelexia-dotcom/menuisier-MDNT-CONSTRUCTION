@@ -18,7 +18,7 @@ export function FeaturedProjects() {
           </h2>
           <p className="text-text-muted max-w-2xl mx-auto">
             Découvrez nos transformations avant/après et laissez-vous inspirer
-            par le savoir-faire artisanal de Michaël.
+            par le savoir-faire artisanal de Mickaël.
           </p>
         </div>
 

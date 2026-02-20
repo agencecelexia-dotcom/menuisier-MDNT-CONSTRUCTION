@@ -5,7 +5,7 @@ import { ContactForm } from "@/components/forms/ContactForm";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Contactez Michaël Le Gall pour votre projet de menuiserie sur mesure. Devis gratuit, conseils personnalisés. Côtes-d'Armor, Bretagne.",
+    "Contactez Mickaël Le Gall pour votre projet de menuiserie sur mesure. Devis gratuit, conseils personnalisés. Côtes-d'Armor, Bretagne.",
 };
 
 export default function ContactPage() {
@@ -100,7 +100,7 @@ export default function ContactPage() {
                 <h3 className="font-heading font-semibold mb-2">Devis Gratuit</h3>
                 <p className="text-text-muted text-sm">
                   Tous nos devis sont gratuits et sans engagement.
-                  Michaël se déplace chez vous pour étudier votre projet.
+                  Mickaël se déplace chez vous pour étudier votre projet.
                 </p>
               </div>
             </div>

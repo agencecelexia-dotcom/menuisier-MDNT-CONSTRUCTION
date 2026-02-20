@@ -141,7 +141,7 @@ export default async function ProjectPage({ params }: Props) {
             Un projet similaire ?
           </h2>
           <p className="text-text-muted mb-8">
-            Contactez Michaël pour discuter de votre projet et obtenir un devis personnalisé.
+            Contactez Mickaël pour discuter de votre projet et obtenir un devis personnalisé.
           </p>
           <Link
             href="/contact"

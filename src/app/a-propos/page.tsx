@@ -6,7 +6,7 @@ import { values } from "@/data/values";
 export const metadata: Metadata = {
   title: "À Propos",
   description:
-    "Découvrez Michaël Le Gall, menuisier artisan depuis plus de 20 ans en Côtes-d'Armor. Son parcours, ses valeurs et son savoir-faire d'excellence.",
+    "Découvrez Mickaël Le Gall, menuisier artisan depuis plus de 20 ans en Côtes-d'Armor. Son parcours, ses valeurs et son savoir-faire d'excellence.",
 };
 
 export default function AProposPage() {
@@ -39,7 +39,7 @@ export default function AProposPage() {
                 <div className="w-32 h-32 rounded-full bg-primary-100 flex items-center justify-center mx-auto mb-4">
                   <Users size={48} className="text-primary" />
                 </div>
-                <p className="text-text-muted text-sm">Photo de Michaël</p>
+                <p className="text-text-muted text-sm">Photo de Mickaël</p>
               </div>
             </div>
             <div>

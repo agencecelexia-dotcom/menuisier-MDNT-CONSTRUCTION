@@ -57,7 +57,7 @@ export default function PolitiqueConfidentialitePage() {
           <h2 className="font-heading text-2xl font-bold mb-4">Contact</h2>
           <p className="text-text-muted">
             Pour toute question relative à la protection de vos données :<br />
-            Michaël Le Gall — atelier.legall22450@gmail.com<br />
+            Mickaël Le Gall — atelier.legall22450@gmail.com<br />
             Téléphone : 06 73 01 62 37
           </p>
         </div>

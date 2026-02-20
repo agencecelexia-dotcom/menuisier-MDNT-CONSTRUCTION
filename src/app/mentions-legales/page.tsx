@@ -21,7 +21,7 @@ export default function MentionsLegalesPage() {
           <h2 className="font-heading text-2xl font-bold mb-4">Éditeur du site</h2>
           <p className="text-text-muted mb-6">
             <strong>Atelier Le Gall</strong><br />
-            Michaël Le Gall — Menuisier Artisan<br />
+            Mickaël Le Gall — Menuisier Artisan<br />
             22450, Côtes-d&apos;Armor, Bretagne<br />
             Téléphone : 06 73 01 62 37<br />
             Email : atelier.legall22450@gmail.com

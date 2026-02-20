@@ -30,7 +30,7 @@ export function JsonLd() {
     image: "https://atelielegall.fr/images/services/cuisine-moderne.jpg",
     founder: {
       "@type": "Person",
-      name: "Michaël Le Gall",
+      name: "Mickaël Le Gall",
       jobTitle: "Menuisier Artisan",
     },
     areaServed: {

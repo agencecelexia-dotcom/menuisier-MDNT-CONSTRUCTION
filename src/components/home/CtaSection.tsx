@@ -9,7 +9,7 @@ export function CtaSection() {
           Parlons de votre projet
         </h2>
         <p className="text-text-muted text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
-          Chaque projet commence par une conversation. Contactez Michaël pour
+          Chaque projet commence par une conversation. Contactez Mickaël pour
           discuter de vos envies et obtenir un devis personnalisé gratuit.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

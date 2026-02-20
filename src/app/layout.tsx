@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     template: "%s | Atelier Le Gall",
   },
   description:
-    "Michaël Le Gall, menuisier artisan en Côtes-d'Armor. Cuisines sur mesure, escaliers, dressings, agencements haut de gamme. Plus de 20 ans de savoir-faire.",
+    "Mickaël Le Gall, menuisier artisan en Côtes-d'Armor. Cuisines sur mesure, escaliers, dressings, agencements haut de gamme. Plus de 20 ans de savoir-faire.",
   keywords: [
     "menuisier",
     "menuiserie",

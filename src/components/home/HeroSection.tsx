@@ -24,7 +24,7 @@ export function HeroSection() {
           <span className="text-white">d&apos;Excellence</span>
         </h1>
         <p className="text-white/75 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
-          Michaël Le Gall transforme vos espaces en créant des meubles et
+          Mickaël Le Gall transforme vos espaces en créant des meubles et
           agencements uniques, adaptés à vos besoins et à votre style.
           Plus de 20 ans de savoir-faire artisanal.
         </p>
