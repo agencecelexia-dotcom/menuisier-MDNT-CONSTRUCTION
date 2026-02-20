@@ -6,7 +6,7 @@ export interface Project {
   fullDescription: string;
   location: string;
   year: number;
-  category: "cuisine" | "escalier" | "dressing" | "bibliotheque" | "sdb" | "bureau";
+  category: "charpente" | "extension" | "menuiserie" | "agencement" | "cuisine" | "escalier" | "dressing" | "bibliotheque" | "sdb" | "bureau";
   beforeImage: string;
   afterImage: string;
   challenges: string[];
