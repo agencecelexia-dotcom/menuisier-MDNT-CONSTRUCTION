@@ -80,7 +80,7 @@ const FAKE_STATS = {
       service: "Escalier",
       subject: "Escalier sur mesure pour mezzanine",
       message:
-        "Bonjour Mickaël, je fais construire une mezzanine dans mon salon et j'aurais besoin d'un escalier hélicoïdal en bois. Hauteur sous plafond 3m20. J'ai vu vos réalisations sur le site, c'est exactement ce que je recherche. Pouvez-vous passer voir les lieux ?",
+        "Bonjour Maxence, je fais construire une mezzanine dans mon salon et j'aurais besoin d'un escalier hélicoïdal en bois. Hauteur sous plafond 3m20. J'ai vu vos réalisations sur le site, c'est exactement ce que je recherche. Pouvez-vous passer voir les lieux ?",
       location: "Saint-Brieuc (22000)",
       date: "19/02/2026",
       time: "09:15",
@@ -229,7 +229,7 @@ export default function AdminDashboardPage() {
               Dashboard
             </h1>
             <p className="text-text-muted">
-              Statistiques Atelier Le Gall — Février 2026
+              Statistiques MDNT Construction — Février 2026
             </p>
           </div>
           <div className="flex items-center gap-3">
@@ -635,7 +635,7 @@ export default function AdminDashboardPage() {
                 Appeler
               </a>
               <a
-                href={`mailto:${selectedSubmission.email}?subject=Re: ${encodeURIComponent(selectedSubmission.subject)} - Atelier Le Gall`}
+                href={`mailto:${selectedSubmission.email}?subject=Re: ${encodeURIComponent(selectedSubmission.subject)} - MDNT Construction`}
                 className="flex-1 inline-flex items-center justify-center gap-2 bg-primary text-white px-6 py-3 rounded-xl font-medium hover:bg-primary/90 transition-colors"
               >
                 <Mail size={18} />

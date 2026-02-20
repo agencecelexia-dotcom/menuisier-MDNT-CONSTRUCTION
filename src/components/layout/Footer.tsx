@@ -17,12 +17,12 @@ export function Footer() {
           <Link href="/contact" className="text-white/70 hover:text-white transition-colors">
             Contact
           </Link>
-          <a href="tel:0673016237" className="text-white/70 hover:text-white transition-colors">
-            06 73 01 62 37
+          <a href="tel:0621144549" className="text-white/70 hover:text-white transition-colors">
+            06 21 14 45 49
           </a>
         </div>
         <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-xs text-white/30">
-          <p>&copy; {new Date().getFullYear()} Atelier Le Gall</p>
+          <p>&copy; {new Date().getFullYear()} MDNT Construction — Maxence Donate</p>
           <Link href="/mentions-legales" className="hover:text-white/60 transition-colors">
             Mentions légales
           </Link>

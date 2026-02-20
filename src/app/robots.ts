@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/admin/", "/api/"],
       },
     ],
-    sitemap: "https://atelielegall.fr/sitemap.xml",
+    sitemap: "https://mdntconstruction.fr/sitemap.xml",
   };
 }

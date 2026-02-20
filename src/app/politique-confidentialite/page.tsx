@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Politique de Confidentialité",
-  description: "Politique de confidentialité du site Atelier Le Gall.",
+  description: "Politique de confidentialité du site MDNT Construction.",
 };
 
 export default function PolitiqueConfidentialitePage() {
@@ -44,7 +44,7 @@ export default function PolitiqueConfidentialitePage() {
             Conformément au Règlement Général sur la Protection des Données
             (RGPD), vous disposez d&apos;un droit d&apos;accès, de rectification, de
             suppression et de portabilité de vos données. Pour exercer ces
-            droits, contactez-nous à : atelier.legall22450@gmail.com
+            droits, contactez-nous à : mdntconstruction@gmail.com
           </p>
 
           <h2 className="font-heading text-2xl font-bold mb-4">Cookies</h2>
@@ -57,8 +57,8 @@ export default function PolitiqueConfidentialitePage() {
           <h2 className="font-heading text-2xl font-bold mb-4">Contact</h2>
           <p className="text-text-muted">
             Pour toute question relative à la protection de vos données :<br />
-            Mickaël Le Gall — atelier.legall22450@gmail.com<br />
-            Téléphone : 06 73 01 62 37
+            Maxence Donate — mdntconstruction@gmail.com<br />
+            Téléphone : 06 21 14 45 49
           </p>
         </div>
       </section>

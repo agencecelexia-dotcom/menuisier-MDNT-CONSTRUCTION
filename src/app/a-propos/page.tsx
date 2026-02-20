@@ -6,7 +6,7 @@ import { values } from "@/data/values";
 export const metadata: Metadata = {
   title: "À Propos",
   description:
-    "Découvrez Mickaël Le Gall, menuisier artisan depuis plus de 20 ans en Côtes-d'Armor. Son parcours, ses valeurs et son savoir-faire d'excellence.",
+    "Découvrez Maxence Donate, charpentier-menuisier artisan fondateur de MDNT Construction. Son parcours, ses valeurs et son savoir-faire.",
 };
 
 export default function AProposPage() {
@@ -21,11 +21,11 @@ export default function AProposPage() {
             Notre Histoire
           </p>
           <h1 className="font-heading text-4xl md:text-5xl font-bold text-white mb-4">
-            À Propos de l&apos;Atelier
+            À Propos de MDNT Construction
           </h1>
           <p className="text-white/75 text-lg max-w-2xl mx-auto">
-            Plus de 20 ans de passion, de précision et de créativité au service
-            de vos projets.
+            Passion du bois, savoir-faire artisanal et rigueur au service
+            de vos projets de charpente et menuiserie.
           </p>
         </div>
       </section>
@@ -39,7 +39,7 @@ export default function AProposPage() {
                 <div className="w-32 h-32 rounded-full bg-primary-100 flex items-center justify-center mx-auto mb-4">
                   <Users size={48} className="text-primary" />
                 </div>
-                <p className="text-text-muted text-sm">Photo de Mickaël</p>
+                <p className="text-text-muted text-sm">Photo de Maxence</p>
               </div>
             </div>
             <div>
@@ -67,7 +67,7 @@ export default function AProposPage() {
                 </div>
                 <div className="flex items-center gap-3">
                   <MapPin size={18} className="text-accent" />
-                  <span>22450, Côtes-d&apos;Armor, Bretagne</span>
+                  <span>France — Intervention régionale</span>
                 </div>
               </div>
             </div>

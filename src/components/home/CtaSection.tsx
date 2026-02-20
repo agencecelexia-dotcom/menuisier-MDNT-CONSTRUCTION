@@ -9,8 +9,8 @@ export function CtaSection() {
           Parlons de votre projet
         </h2>
         <p className="text-text-muted text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
-          Chaque projet commence par une conversation. Contactez Mickaël pour
-          discuter de vos envies et obtenir un devis personnalisé gratuit.
+          Chaque projet commence par une conversation. Contactez Maxence pour
+          discuter de votre projet de charpente ou menuiserie et obtenir un devis gratuit.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Link
@@ -21,10 +21,10 @@ export function CtaSection() {
             Demander un Devis Gratuit
           </Link>
           <a
-            href="tel:0673016237"
+            href="tel:0621144549"
             className="inline-flex items-center gap-2 border-2 border-primary/20 text-primary px-8 py-4 rounded-lg text-lg font-medium hover:bg-primary/5 transition-all duration-300"
           >
-            06 73 01 62 37
+            06 21 14 45 49
             <ArrowRight size={20} />
           </a>
         </div>

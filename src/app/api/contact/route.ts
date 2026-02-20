@@ -37,7 +37,7 @@ export async function POST(request: NextRequest) {
             message,
             service: service || "non spécifié",
             timestamp: new Date().toISOString(),
-            source: "atelielegall.fr",
+            source: "mdntconstruction.fr",
           }),
         });
       } catch (webhookError) {

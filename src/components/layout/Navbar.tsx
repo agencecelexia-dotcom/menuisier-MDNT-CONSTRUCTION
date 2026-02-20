@@ -41,14 +41,14 @@ export function Navbar() {
                 isScrolled ? "text-primary" : "text-white"
               }`}
             >
-              Atelier Le Gall
+              MDNT Construction
             </span>
             <span
               className={`text-xs tracking-widest uppercase ${
                 isScrolled ? "text-text-muted" : "text-white/70"
               }`}
             >
-              Menuiserie d&apos;Excellence
+              Charpente &amp; Menuiserie
             </span>
           </Link>
 

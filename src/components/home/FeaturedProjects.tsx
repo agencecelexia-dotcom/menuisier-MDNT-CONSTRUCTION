@@ -18,7 +18,7 @@ export function FeaturedProjects() {
           </h2>
           <p className="text-text-muted max-w-2xl mx-auto">
             Découvrez nos transformations avant/après et laissez-vous inspirer
-            par le savoir-faire artisanal de Mickaël.
+            par le savoir-faire artisanal de Maxence Donate — MDNT Construction.
           </p>
         </div>
 
@@ -40,17 +40,15 @@ export function FeaturedProjects() {
                   />
                   <div className="absolute top-4 left-4">
                     <span className="bg-accent text-white text-xs font-medium px-3 py-1 rounded-full">
-                      {project.category === "cuisine"
-                        ? "Cuisine"
-                        : project.category === "escalier"
-                        ? "Escalier"
-                        : project.category === "dressing"
-                        ? "Dressing"
-                        : project.category === "bibliotheque"
-                        ? "Bibliothèque"
-                        : project.category === "sdb"
-                        ? "Salle de Bain"
-                        : "Bureau"}
+                      {project.category === "charpente"
+                        ? "Charpente"
+                        : project.category === "extension"
+                        ? "Extension Bois"
+                        : project.category === "menuiserie"
+                        ? "Menuiserie"
+                        : project.category === "agencement"
+                        ? "Agencement"
+                        : "Réalisation"}
                     </span>
                   </div>
                 </div>

@@ -4,25 +4,25 @@ export const values: Value[] = [
   {
     id: 'val-001',
     title: 'Savoir-faire Artisanal',
-    description: "Plus de 20 ans d'expérience, technique et passion pour chaque détail.",
+    description: "Expertise en charpente et menuiserie, techniques traditionnelles et modernes maîtrisées.",
     icon: 'Hammer',
   },
   {
     id: 'val-002',
-    title: 'Matériaux Premium',
-    description: 'Sélection rigoureuse de bois massifs et matériaux haut de gamme.',
+    title: 'Bois Sélectionnés',
+    description: 'Chêne, douglas, mélèze, pin — des bois massifs de qualité, choisis avec soin.',
     icon: 'TreePine',
   },
   {
     id: 'val-003',
-    title: 'Personnalisation Complète',
-    description: 'Chaque projet est sur mesure, adapté exactement à votre vision.',
+    title: 'Sur Mesure Total',
+    description: 'Chaque projet est unique, conçu et réalisé selon vos besoins et votre budget.',
     icon: 'Brush',
   },
   {
     id: 'val-004',
     title: 'Respect des Délais',
-    description: 'Ponctualité et professionnalisme garantis du devis à la finition.',
+    description: 'Ponctualité et rigueur garanties, du devis à la réception du chantier.',
     icon: 'Clock',
   },
 ];

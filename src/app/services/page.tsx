@@ -7,7 +7,7 @@ import { services } from "@/data/services";
 export const metadata: Metadata = {
   title: "Nos Services",
   description:
-    "Cuisines sur mesure, menuiseries & agencements, rénovation et restauration. Découvrez les services de menuiserie haut de gamme d'Atelier Le Gall.",
+    "Charpente traditionnelle et moderne, menuiserie & agencements, menuiseries extérieures. Découvrez les services de MDNT Construction — Maxence Donate.",
 };
 
 const iconMap: Record<string, React.ReactNode> = {

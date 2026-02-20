@@ -6,16 +6,20 @@ import { projects } from "@/data/projects";
 export const metadata: Metadata = {
   title: "Nos Réalisations",
   description:
-    "Découvrez nos projets de menuiserie haut de gamme : cuisines, escaliers, dressings et plus. Avant/après de transformations en Bretagne.",
+    "Découvrez nos projets de charpente et menuiserie : charpente traditionnelle, extensions bois, menuiseries sur mesure. Avant/après — MDNT Construction.",
 };
 
 const categoryLabels: Record<string, string> = {
-  cuisine: "Cuisine",
-  escalier: "Escalier",
-  dressing: "Dressing",
-  bibliotheque: "Bibliothèque",
-  sdb: "Salle de Bain",
-  bureau: "Bureau",
+  charpente: "Charpente",
+  extension: "Extension Bois",
+  menuiserie: "Menuiserie",
+  agencement: "Agencement",
+  cuisine: "Menuiserie",
+  escalier: "Menuiserie",
+  dressing: "Agencement",
+  bibliotheque: "Agencement",
+  sdb: "Menuiserie",
+  bureau: "Agencement",
 };
 
 export default function RealisationsPage() {

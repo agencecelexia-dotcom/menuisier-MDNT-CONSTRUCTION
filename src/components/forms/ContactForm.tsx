@@ -5,13 +5,12 @@ import { Send, Loader2 } from "lucide-react";
 
 const serviceOptions = [
   { value: "", label: "Sélectionnez un service" },
-  { value: "cuisine", label: "Cuisine sur mesure" },
-  { value: "escalier", label: "Escalier design" },
-  { value: "dressing", label: "Dressing & rangements" },
-  { value: "bibliotheque", label: "Bibliothèque" },
-  { value: "bureau", label: "Bureau intégré" },
-  { value: "sdb", label: "Salle de bain" },
-  { value: "renovation", label: "Rénovation" },
+  { value: "charpente-traditionnelle", label: "Charpente traditionnelle" },
+  { value: "charpente-moderne", label: "Charpente moderne / Extension bois" },
+  { value: "menuiserie-interieure", label: "Menuiserie intérieure" },
+  { value: "menuiseries-exterieures", label: "Menuiseries extérieures (portes, fenêtres)" },
+  { value: "agencement", label: "Agencement sur mesure" },
+  { value: "renovation-charpente", label: "Rénovation charpente" },
   { value: "autre", label: "Autre projet" },
 ];
 
@@ -62,7 +61,7 @@ export function ContactForm() {
         </div>
         <h3 className="font-heading text-xl font-semibold mb-2">Message Envoyé !</h3>
         <p className="text-text-muted">
-          Merci pour votre message. Mickaël vous répondra dans les plus brefs délais.
+          Merci pour votre message. Maxence vous répondra dans les plus brefs délais.
         </p>
         <button
           onClick={() => setStatus("idle")}

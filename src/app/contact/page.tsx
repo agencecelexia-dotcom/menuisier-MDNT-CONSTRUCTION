@@ -5,7 +5,7 @@ import { ContactForm } from "@/components/forms/ContactForm";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Contactez Mickaël Le Gall pour votre projet de menuiserie sur mesure. Devis gratuit, conseils personnalisés. Côtes-d'Armor, Bretagne.",
+    "Contactez MDNT Construction pour votre projet de charpente ou menuiserie. Devis gratuit, conseils personnalisés. Maxence Donate — 06 21 14 45 49.",
 };
 
 export default function ContactPage() {
@@ -44,10 +44,10 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold mb-1">Téléphone</h3>
                     <a
-                      href="tel:0673016237"
+                      href="tel:0621144549"
                       className="text-text-muted hover:text-accent transition-colors"
                     >
-                      06 73 01 62 37
+                      06 21 14 45 49
                     </a>
                   </div>
                 </div>
@@ -59,10 +59,10 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold mb-1">Email</h3>
                     <a
-                      href="mailto:atelier.legall22450@gmail.com"
+                      href="mailto:mdntconstruction@gmail.com"
                       className="text-text-muted hover:text-accent transition-colors"
                     >
-                      atelier.legall22450@gmail.com
+                      mdntconstruction@gmail.com
                     </a>
                   </div>
                 </div>
@@ -74,9 +74,9 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold mb-1">Localisation</h3>
                     <p className="text-text-muted">
-                      22450, Côtes-d&apos;Armor
+                      France
                       <br />
-                      Bretagne, France
+                      Intervention régionale
                     </p>
                   </div>
                 </div>
@@ -100,7 +100,7 @@ export default function ContactPage() {
                 <h3 className="font-heading font-semibold mb-2">Devis Gratuit</h3>
                 <p className="text-text-muted text-sm">
                   Tous nos devis sont gratuits et sans engagement.
-                  Mickaël se déplace chez vous pour étudier votre projet.
+                  Maxence se déplace sur votre chantier pour étudier votre projet.
                 </p>
               </div>
             </div>
@@ -125,24 +125,24 @@ export default function ContactPage() {
               Nous Trouver
             </h2>
             <p className="text-text-muted">
-              Atelier Le Gall — Menuisier, Côtes-d&apos;Armor
+              MDNT Construction — Charpente &amp; Menuiserie, France
             </p>
           </div>
           <div className="rounded-2xl overflow-hidden shadow-premium">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2619.7!2d-3.2882653!3d48.711302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x481227a033540931%3A0xc2dba36afe4d99b0!2sAtelier%20Le%20Gall%20menuisier!5e0!3m2!1sfr!2sfr!4v1"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10881661.47804305!2d-4.387048!3d46.227638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd54a02933785731%3A0x27c4e09dc3e87b6c!2sFrance!5e0!3m2!1sfr!2sfr!4v1"
               width="100%"
               height="450"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Atelier Le Gall - Google Maps"
+              title="MDNT Construction - France"
             />
           </div>
           <div className="text-center mt-4">
             <a
-              href="https://www.google.com/maps/place/Atelier+Le+Gall+menuisier/@48.711302,-3.2882653,17z"
+              href="https://www.google.com/maps/search/MDNT+Construction"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-accent hover:text-accent-700 font-medium transition-colors"

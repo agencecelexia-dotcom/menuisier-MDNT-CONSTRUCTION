@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Mentions Légales",
-  description: "Mentions légales du site Atelier Le Gall, menuiserie artisanale en Côtes-d'Armor.",
+  description: "Mentions légales du site MDNT Construction, charpente et menuiserie artisanales.",
 };
 
 export default function MentionsLegalesPage() {
@@ -20,11 +20,11 @@ export default function MentionsLegalesPage() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-lg">
           <h2 className="font-heading text-2xl font-bold mb-4">Éditeur du site</h2>
           <p className="text-text-muted mb-6">
-            <strong>Atelier Le Gall</strong><br />
-            Mickaël Le Gall — Menuisier Artisan<br />
-            22450, Côtes-d&apos;Armor, Bretagne<br />
-            Téléphone : 06 73 01 62 37<br />
-            Email : atelier.legall22450@gmail.com
+            <strong>MDNT Construction</strong><br />
+            Maxence Donate — Charpentier-Menuisier Artisan<br />
+            France<br />
+            Téléphone : 06 21 14 45 49<br />
+            Email : mdntconstruction@gmail.com
           </p>
 
           <h2 className="font-heading text-2xl font-bold mb-4">Hébergement</h2>
@@ -43,14 +43,14 @@ export default function MentionsLegalesPage() {
           <h2 className="font-heading text-2xl font-bold mb-4">Propriété intellectuelle</h2>
           <p className="text-text-muted mb-6">
             L&apos;ensemble du contenu de ce site (textes, images, vidéos, etc.) est la
-            propriété exclusive d&apos;Atelier Le Gall, sauf mention contraire. Toute
+            propriété exclusive d&apos;MDNT Construction, sauf mention contraire. Toute
             reproduction, même partielle, est interdite sans autorisation préalable.
           </p>
 
           <h2 className="font-heading text-2xl font-bold mb-4">Responsabilité</h2>
           <p className="text-text-muted">
-            Les informations fournies sur ce site le sont à titre indicatif. Atelier
-            Le Gall ne saurait être tenu responsable des erreurs, d&apos;une absence de
+            Les informations fournies sur ce site le sont à titre indicatif. MDNT Construction
+            ne saurait être tenu responsable des erreurs, d&apos;une absence de
             disponibilité des informations ou de la présence de virus sur son site.
           </p>
         </div>

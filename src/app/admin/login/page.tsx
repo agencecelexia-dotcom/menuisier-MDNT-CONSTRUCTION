@@ -47,7 +47,7 @@ export default function AdminLoginPage() {
             </div>
             <h1 className="font-heading text-2xl font-bold">Administration</h1>
             <p className="text-text-muted text-sm mt-1">
-              Accès réservé — Atelier Le Gall
+              Accès réservé — MDNT Construction
             </p>
           </div>
 

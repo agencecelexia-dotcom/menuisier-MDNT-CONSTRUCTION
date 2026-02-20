@@ -141,7 +141,7 @@ export default async function ProjectPage({ params }: Props) {
             Un projet similaire ?
           </h2>
           <p className="text-text-muted mb-8">
-            Contactez Mickaël pour discuter de votre projet et obtenir un devis personnalisé.
+            Contactez Maxence pour discuter de votre projet de charpente ou menuiserie et obtenir un devis gratuit.
           </p>
           <Link
             href="/contact"
