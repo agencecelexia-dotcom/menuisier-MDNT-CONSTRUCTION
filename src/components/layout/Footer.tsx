@@ -15,7 +15,7 @@ export function Footer() {
               Menuiserie d&apos;excellence depuis plus de 20 ans. Créations sur
               mesure en Côtes-d&apos;Armor et toute la Bretagne.
             </p>
-            <p className="text-accent-alt text-sm font-medium">
+            <p className="text-amber-300 text-sm font-medium italic">
               Artisan passionné, résultats exceptionnels.
             </p>
           </div>

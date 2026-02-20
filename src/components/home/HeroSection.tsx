@@ -21,7 +21,7 @@ export function HeroSection() {
         <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
           Menuiserie
           <br />
-          <span className="text-accent-alt">d&apos;Excellence</span>
+          <span className="text-amber-300">d&apos;Excellence</span>
         </h1>
         <p className="text-white/75 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
           Michaël Le Gall transforme vos espaces en créant des meubles et

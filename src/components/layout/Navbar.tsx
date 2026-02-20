@@ -35,7 +35,7 @@ export function Navbar() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <Link href="/" className="flex flex-col">
+          <Link href="/" className="flex flex-col cursor-pointer">
             <span
               className={`font-heading text-xl md:text-2xl font-bold tracking-tight ${
                 isScrolled ? "text-primary" : "text-white"

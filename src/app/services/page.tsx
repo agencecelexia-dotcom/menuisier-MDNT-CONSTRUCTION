@@ -124,17 +124,17 @@ export default function ServicesPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 md:py-20 bg-primary">
+      <section className="py-16 md:py-20 bg-accent-800">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-white mb-6">
             Prêt à transformer votre intérieur ?
           </h2>
-          <p className="text-white/75 text-lg mb-8">
+          <p className="text-white/80 text-lg mb-8">
             Contactez-nous pour discuter de votre projet et obtenir un devis gratuit.
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 bg-accent text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-accent-700 transition-colors"
+            className="inline-flex items-center gap-2 bg-white text-primary px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white/90 transition-colors"
           >
             <Phone size={20} />
             Demander un Devis Gratuit

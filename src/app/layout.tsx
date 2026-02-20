@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { playfair, inter } from "./fonts";
+import { cormorant, inter } from "./fonts";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { JsonLd } from "@/components/seo/JsonLd";
@@ -59,7 +59,7 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body
-        className={`${playfair.variable} ${inter.variable} antialiased`}
+        className={`${cormorant.variable} ${inter.variable} antialiased`}
       >
         <JsonLd />
         <Navbar />
