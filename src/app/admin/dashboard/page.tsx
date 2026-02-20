@@ -14,6 +14,12 @@ import {
   Users,
   ArrowUpRight,
   ArrowDownRight,
+  X,
+  Phone,
+  Mail,
+  MapPin,
+  Clock,
+  ChevronRight,
 } from "lucide-react";
 
 interface AnalyticsEvent {
@@ -53,33 +59,73 @@ const FAKE_STATS = {
   ],
   recentSubmissions: [
     {
+      id: 1,
       name: "Marie Dupont",
+      email: "marie.dupont@gmail.com",
+      phone: "06 12 34 56 78",
       service: "Cuisine sur mesure",
+      subject: "Rénovation cuisine ouverte",
+      message:
+        "Bonjour, nous souhaitons rénover entièrement notre cuisine pour la transformer en cuisine ouverte sur le séjour. La pièce fait environ 15m². Nous aimerions des matériaux nobles (chêne massif) avec un plan de travail en granit. Disponible en semaine pour un rendez-vous.",
+      location: "Dinan (22100)",
       date: "20/02/2026",
+      time: "14:32",
       status: "Nouveau",
     },
     {
+      id: 2,
       name: "Jean-Pierre Martin",
+      email: "jp.martin@outlook.fr",
+      phone: "06 98 76 54 32",
       service: "Escalier",
+      subject: "Escalier sur mesure pour mezzanine",
+      message:
+        "Bonjour Michaël, je fais construire une mezzanine dans mon salon et j'aurais besoin d'un escalier hélicoïdal en bois. Hauteur sous plafond 3m20. J'ai vu vos réalisations sur le site, c'est exactement ce que je recherche. Pouvez-vous passer voir les lieux ?",
+      location: "Saint-Brieuc (22000)",
       date: "19/02/2026",
+      time: "09:15",
       status: "Contacté",
     },
     {
+      id: 3,
       name: "Sophie Leroy",
+      email: "sophie.leroy22@free.fr",
+      phone: "07 45 23 67 89",
       service: "Dressing",
+      subject: "Dressing chambre parentale",
+      message:
+        "Bonjour, nous venons d'emménager et la chambre parentale dispose d'un grand renfoncement (3m x 2m) qui serait parfait pour un dressing sur mesure. Nous aimerions des portes coulissantes et beaucoup de rangements. Budget autour de 5000-7000€.",
+      location: "Ploërmel (56800)",
       date: "18/02/2026",
+      time: "18:47",
       status: "Devis envoyé",
     },
     {
+      id: 4,
       name: "Pierre Moreau",
+      email: "p.moreau@wanadoo.fr",
+      phone: "06 33 44 55 66",
       service: "Bibliothèque",
+      subject: "Bibliothèque murale salon",
+      message:
+        "Je souhaite faire réaliser une grande bibliothèque murale sur tout un pan de mur de mon salon (4m50 de large, 2m60 de haut). Style classique avec moulures. Bois massif de préférence. Merci de me contacter pour en discuter.",
+      location: "Vannes (56000)",
       date: "17/02/2026",
+      time: "11:20",
       status: "Contacté",
     },
     {
+      id: 5,
       name: "Isabelle Petit",
+      email: "isabelle.petit@gmail.com",
+      phone: "06 77 88 99 00",
       service: "Rénovation",
+      subject: "Rénovation menuiseries anciennes",
+      message:
+        "Bonjour, nous avons acheté une longère bretonne et les menuiseries intérieures (portes, plinthes, encadrements) sont en mauvais état. Nous cherchons un artisan pour restaurer ces éléments d'époque tout en les modernisant. Environ 8 portes + huisseries.",
+      location: "Guingamp (22200)",
       date: "15/02/2026",
+      time: "16:05",
       status: "Devis envoyé",
     },
   ],
@@ -94,9 +140,12 @@ const FAKE_STATS = {
   ],
 };
 
+type Submission = (typeof FAKE_STATS.recentSubmissions)[number];
+
 export default function AdminDashboardPage() {
   const [events, setEvents] = useState<AnalyticsEvent[]>([]);
   const [loading, setLoading] = useState(true);
+  const [selectedSubmission, setSelectedSubmission] = useState<Submission | null>(null);
   const router = useRouter();
 
   const fetchData = useCallback(async () => {
@@ -384,14 +433,19 @@ export default function AdminDashboardPage() {
                   <th className="text-left text-xs font-semibold text-text-muted uppercase tracking-wider pb-3 pr-4">
                     Date
                   </th>
-                  <th className="text-left text-xs font-semibold text-text-muted uppercase tracking-wider pb-3">
+                  <th className="text-left text-xs font-semibold text-text-muted uppercase tracking-wider pb-3 pr-4">
                     Statut
                   </th>
+                  <th className="pb-3 w-8" />
                 </tr>
               </thead>
               <tbody>
                 {FAKE_STATS.recentSubmissions.map((s) => (
-                  <tr key={s.name} className="border-b border-border/30 last:border-0">
+                  <tr
+                    key={s.id}
+                    onClick={() => setSelectedSubmission(s)}
+                    className="border-b border-border/30 last:border-0 cursor-pointer hover:bg-surface transition-colors"
+                  >
                     <td className="py-3 pr-4">
                       <span className="text-sm font-medium text-primary">{s.name}</span>
                     </td>
@@ -401,7 +455,7 @@ export default function AdminDashboardPage() {
                     <td className="py-3 pr-4">
                       <span className="text-sm text-text-muted">{s.date}</span>
                     </td>
-                    <td className="py-3">
+                    <td className="py-3 pr-4">
                       <span
                         className={`inline-flex text-xs font-medium px-2.5 py-1 rounded-full ${
                           s.status === "Nouveau"
@@ -414,6 +468,9 @@ export default function AdminDashboardPage() {
                         {s.status}
                       </span>
                     </td>
+                    <td className="py-3">
+                      <ChevronRight size={16} className="text-text-muted" />
+                    </td>
                   </tr>
                 ))}
               </tbody>
@@ -421,6 +478,120 @@ export default function AdminDashboardPage() {
           </div>
         </div>
       </div>
+
+      {/* Modal détail demande */}
+      {selectedSubmission && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center p-4"
+          onClick={() => setSelectedSubmission(null)}
+        >
+          {/* Overlay */}
+          <div className="absolute inset-0 bg-primary/60 backdrop-blur-sm" />
+
+          {/* Modal */}
+          <div
+            className="relative bg-white rounded-2xl shadow-premium-lg w-full max-w-lg max-h-[90vh] overflow-y-auto"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Header */}
+            <div className="flex items-start justify-between p-6 pb-4 border-b border-border/50">
+              <div>
+                <h3 className="font-heading text-xl font-bold text-primary">
+                  {selectedSubmission.name}
+                </h3>
+                <p className="text-text-muted text-sm mt-1">
+                  {selectedSubmission.subject}
+                </p>
+              </div>
+              <button
+                onClick={() => setSelectedSubmission(null)}
+                className="p-1.5 rounded-lg hover:bg-surface transition-colors"
+                aria-label="Fermer"
+              >
+                <X size={20} className="text-text-muted" />
+              </button>
+            </div>
+
+            {/* Contenu */}
+            <div className="p-6 space-y-5">
+              {/* Statut + Date */}
+              <div className="flex items-center gap-3">
+                <span
+                  className={`inline-flex text-xs font-medium px-2.5 py-1 rounded-full ${
+                    selectedSubmission.status === "Nouveau"
+                      ? "bg-blue-50 text-blue-700"
+                      : selectedSubmission.status === "Contacté"
+                      ? "bg-amber-50 text-amber-700"
+                      : "bg-green-50 text-green-700"
+                  }`}
+                >
+                  {selectedSubmission.status}
+                </span>
+                <span className="flex items-center gap-1.5 text-sm text-text-muted">
+                  <Clock size={14} />
+                  {selectedSubmission.date} à {selectedSubmission.time}
+                </span>
+              </div>
+
+              {/* Infos contact */}
+              <div className="bg-surface rounded-xl p-4 space-y-3">
+                <div className="flex items-center gap-3">
+                  <Mail size={16} className="text-accent shrink-0" />
+                  <span className="text-sm text-primary">{selectedSubmission.email}</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Phone size={16} className="text-accent shrink-0" />
+                  <span className="text-sm text-primary">{selectedSubmission.phone}</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <MapPin size={16} className="text-accent shrink-0" />
+                  <span className="text-sm text-primary">{selectedSubmission.location}</span>
+                </div>
+              </div>
+
+              {/* Service */}
+              <div>
+                <p className="text-xs font-semibold text-text-muted uppercase tracking-wider mb-1">
+                  Service demandé
+                </p>
+                <p className="text-sm font-medium text-primary">
+                  {selectedSubmission.service}
+                </p>
+              </div>
+
+              {/* Message */}
+              <div>
+                <p className="text-xs font-semibold text-text-muted uppercase tracking-wider mb-2">
+                  Message
+                </p>
+                <div className="bg-surface rounded-xl p-4">
+                  <p className="text-sm text-primary leading-relaxed whitespace-pre-wrap">
+                    {selectedSubmission.message}
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Actions */}
+            <div className="p-6 pt-2 flex flex-col sm:flex-row gap-3">
+              <a
+                href={`tel:${selectedSubmission.phone.replace(/\s/g, "")}`}
+                className="flex-1 inline-flex items-center justify-center gap-2 bg-accent text-white px-6 py-3 rounded-xl font-medium hover:bg-accent-700 transition-colors"
+              >
+                <Phone size={18} />
+                Appeler
+              </a>
+              <a
+                href={`mailto:${selectedSubmission.email}?subject=Re: ${encodeURIComponent(selectedSubmission.subject)} - Atelier Le Gall`}
+                className="flex-1 inline-flex items-center justify-center gap-2 bg-primary text-white px-6 py-3 rounded-xl font-medium hover:bg-primary/90 transition-colors"
+              >
+                <Mail size={18} />
+                Envoyer un email
+              </a>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 }
